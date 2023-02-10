@@ -166,11 +166,10 @@ switch(animal){ //Start of the switch statement, specifying what variable we wan
 }
 
 
-
 // TODO: CHALLENGE 5: Turn the code below into a switch statement like the one above. 
 
 var food = "pizza";
-
+// IF - ELSE VERSION
 if(food === "salad"){
     console.log("My salad has tomatoes, lettuce and carrots!");
 }
@@ -181,6 +180,7 @@ else{
     console.log("Enjoy your meal!");
 }
 
+// SWITCH VERSION
 switch(null) //<-- replace 'null' with a statement that represents the start of your switch statement here!
 {
 

@@ -46,8 +46,8 @@ const studentID = "FirstName LastName"; // We use a const to make our variable i
 // TODO: CHALLENGE 1: Change this student ID to your full name. 
 
 let currentYear = 2023; // we use var if our value will change in the future. 
-let yearOfBirth = 2000; 
-// TODO: CHALLENGE 2: Change the variable yearOfBirth to the year that you were born. 
+let yearOfBirth = null; 
+// TODO: CHALLENGE 2: Change the variable yearOfBirth to replace 'null' with the year that you were born. 
 
 // TODO: CHALLENGE 3: What number will be stored in currentAge? 
 let currentAge = currentYear - yearOfBirth;

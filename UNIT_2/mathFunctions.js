@@ -35,26 +35,27 @@
  */
 
 // CHALLENGE 1: How do you find the total number of pets on the app? 
-let totalPets = totalCats + totalDogs + totalFish; //TODO: Edit this line to output the total number of pets. 
+let totalPets = null; //TODO: Edit this line by replacing 'null' to output the total number of pets. 
 
 // CHALLENGE 2: Suppose there are some parks that are for dogs and some parks that are only for kids. Given the 
 // information below, how can you calculate the number of dog parks in an area? 
 
 let kidParks = 9;
-let dogParks = totalParks - kidParks; //TODO: Edit this line to output the total number of dog parks.
+let dogParks = null; //TODO: Edit this line by replacing 'null' to output the total number of dog parks.
 
 // BONUS CHALLENGE: Try using an Assignment Operator to complete the below statement. 
 let dogParks2 = totalParks;
-dogParks2 -= kidParks;
+dogParks2 = dogParks2 - kidParks; // <-- Convert this to Assignment Operator Version. 
+
 
 // CHALLENGE 3: Suppose that friend groups can only have upto three animals at a time. How many friend groups 
 // are there comprising of ONLY dogs.
 
-let dogFriendGroups = totalDogs/ 3; // TODO: Edit this line to output the total number of dog friend groups. 
+let dogFriendGroups = null; // TODO: Edit this line to output the total number of dog friend groups. 
 
-// CHALLENGE 4: If each vet can only serve two cats at a time, how many cats will be left over? 
+// CHALLENGE 4: If each vet can only serve two cats at a time, how many cats will be left over? HINT: How do you calculate the remainder value? 
 
-let catsLeftOver = totalCats % totalVets; // TODO: Edit this line to output the total number of cats left over. 
+let catsLeftOver = null; // TODO: Edit this line to output the total number of cats left over. 
 
  /** MATH: 
   * There are many ways to perform Math functions in JavaScript.
@@ -68,11 +69,11 @@ let catsLeftOver = totalCats % totalVets; // TODO: Edit this line to output the 
  //CHALLENGE 5: There are two Samson's on your app. One of them is a cat, and the other is a dog. Create two, completely different ID's for them using the Math.random function. 
 
  let samsonTheCat = Math.random();
- let samsonTheDog = Math.random();
+ let samsonTheDog = null;
 
  // CHALLENGE 6: Get the minimum number of cat bags from the following variable using Math.floor()
 let catBags = 7.956;
-let minimumCatBags = Math.floor(catBags);
+let minimumCatBags = null;
 
 /**
  * The function below is the sales pitch you have created!

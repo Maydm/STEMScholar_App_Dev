@@ -28,8 +28,8 @@ const App = () => {
      * TODO: CHALLENGE 3: In 'Text', add a vertical margin of size 16 to make some space. 
      * 
      */
-    <View style={{padding: 16}}>
-      <Text style={{ marginVertical: 16 }}>
+    <View style={{}}>
+      <Text style={{ }}>
       {name ? `Hello ${name}!` : 'What is your name?\n'}
       </Text>
       {/** Here we have the TextInput component, where we will be entering text into the app.
@@ -40,7 +40,7 @@ const App = () => {
       <TextInput
         style={{ padding: 8, backgroundColor: '#f5f5f5' }}
         secureTextEntry = {true}
-        onChangeText={text => setName(text)
+        onChangeText={ {/** Add text in here! */}
         }
       />
       {/** The Text component can control the font, font size, font color, and fontWeight.
@@ -48,7 +48,7 @@ const App = () => {
       */}
       <Text>
         The
-          <Text style = {{fontWeight: "bold"}}>  quick brown fox </Text>
+          <Text style = {{/** add text in here! */}}>  quick brown fox </Text>
         jumps over the lazy dog
       </Text>
     </View>

@@ -29,7 +29,10 @@ const App = () => {
       {/* Nest the two ScrollViews.*/} 
       
       <ScrollView vertical={true}>
-        <ScrollView horizontal={true}>
+        
+      </ScrollView>
+
+      <ScrollView horizontal={true}>
           {/* Set the width to 1000, instead of 100.*/} 
           <Image 
           style = {{
@@ -40,7 +43,6 @@ const App = () => {
           source ={{uri: 'https://picsum.photos/100/100'}}
           />
           </ScrollView>
-        </ScrollView>
         <Text style={{margin: 16}}>
         {pressedCount > 0
           ? `The button was pressed ${pressedCount} times!`
@@ -49,8 +51,7 @@ const App = () => {
         </Text>
         <Button
         title='Press me'
-        onPress={() => 
-        setPressedCount(pressedCount + 1)
+        onPress={{/** Change this text to be the onPressButton text.  */}
         }
       />
     </View>
