@@ -43,13 +43,15 @@
  */
 
 const studentID = "FirstName LastName"; // We use a const to make our variable if we know our value won't change ever. 
-// TODO: CHALLENGE 1: Change this student ID to your full name. 
+// TODO: CHALLENGE 1: Change the line above, changing the words "FirstName LastName" to your full name. 
 
 let currentYear = 2023; // we use var if our value will change in the future. 
 let yearOfBirth = null; 
 // TODO: CHALLENGE 2: Change the variable yearOfBirth to replace 'null' with the year that you were born. 
 
 // TODO: CHALLENGE 3: What number will be stored in currentAge? 
+// ANSWER: (write your answer here!) --> _____________________
+//
 let currentAge = currentYear - yearOfBirth;
 
 /**
@@ -74,7 +76,7 @@ console.log(`EXAMPLE: And it is currently ${currentYear}`); // Template Literals
 // TODO: CHALLENGE 4: Print out your current age so it appears in the following example form: "I am 16 years old"
 // Once, using String Concatenation and once using a Template Literal. 
 console.log(); // Edit this line. 
-//console.log("I am " + currentAge + " years old.")
+
 
 // This is a boolean variable. It can either be set to true or false.
 
