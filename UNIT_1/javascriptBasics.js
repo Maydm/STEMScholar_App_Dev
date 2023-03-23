@@ -77,7 +77,6 @@ console.log(`EXAMPLE: And it is currently ${currentYear}`); // Template Literals
 // Once, using String Concatenation and once using a Template Literal. 
 console.log(); // Edit this line. 
 
-
 // This is a boolean variable. It can either be set to true or false.
 
 let boolean = false; 
@@ -87,7 +86,7 @@ let boolean = false;
 // Create your variable above!^^
 
 if(completed){
-    console.log("Congratulations! You finished your first activity. Call your instructor over.");
+    console.log("Congratulations! You finished your first activity. Call your instructor over to check out the work you did!");
 }
 
 
