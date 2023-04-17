@@ -8,7 +8,18 @@
  */
 
 /**Welcome to your very first React Native App! In this App, we will explore the View, Text and Text Input 
- * features. Before we begin, we need to make sure we have all of the required tools to get started. So, 
+ * features. 
+ * 
+ * INSTRUCTIONS:
+ * STEP 1: Create a new expo folder called 'hello-world' by running the following command in your terminal. 
+ *          expo init hello-world
+ * STEP 2: Copy (Ctrl + C) and Paste (Ctrl + V) the content in this file into the newly-created App.js file.
+ * STEP 3: Start the app by running the command 'npx expo start', and scanning the provided QR Code with your 
+ *         app.
+ * STEP 4: Answer each of the questions in the sections below, and make the required changes as needed.
+ * STEP 5: Call over your teacher to ask any questions and show them your work.*/ 
+
+/** Before we begin, we need to make sure we have all of the required tools to get started. So, 
  * we import them here:
  */
 import React, { useState } from 'react'; // From the 'react' toolbox, we are using the 'useState' tool.

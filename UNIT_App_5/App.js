@@ -1,11 +1,32 @@
+/**
+ * DO NOT DELETE THIS HEADER!
+ * This file is the property of Maydm (c). Maydm is a 501(c)(3) registered nonprofit created to provide girls
+ * and youth of color in grades 6 -12 with the skills, experiences, and connections to pursue careers in and
+ * change the face of STEM. 
+ * Written By: Anjali Gali, Maydm Programs Team
+ * Edited By: *INSERT YOUR NAME HERE*
+ */
+
+/** Welcome to your fifth app! In this application, you are going to create a navigational structure in order 
+ * to help your user log in and log out. It may be helpful to review how to make if and else statements. 
+ * 
+ * STEP 1: Create a new expo folder called 'stack-tab-drawer' by running the following command in your 
+ * terminal. 
+ *          expo init stack-tab-drawer
+ * STEP 2: Import the following commands: 
+ *         npm install @react-navigation/native
+ *         npm install @react-navigation/stack
+ * STEP 3: Copy (Ctrl + C) and Paste (Ctrl + V) the content in this file into your App.js file.
+ * STEP 4: Start the app by running the command 'npx expo start.', and scanning the provided QR Code with your 
+ *         app.
+ * STEP 5: Add the required content to each of the sections.
+ * STEP 6: Call over your teacher to ask any questions and show them your work.
+ **/
+
 import React, { createContext, useContext, useState } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native'; // This is one of the import statements you will need to have for your project to work. 
-//TODO: CHALLENGE 1: Import NavigationContainer from the react-navigation/native library
+import { NavigationContainer } from '@react-navigation/native'; 
 import { createStackNavigator } from '@react-navigation/stack';
-// This is one of the import statements you will need to have for your project to work. 
-//TODO: CHALLENGE 2: Import createStackNavigator from the react-navigation/stack library
-
 // Our global authentication state, with default values
 export const AuthContext = createContext({
   hasUser: false, 
@@ -19,7 +40,7 @@ const LoginScreen = () => {
     <View style={styles.layout}>
       {/** TODO: CHALLENGE 3: Create a button below that creates a new User. */}
       <Button onPress = {() => {
-        setUser(true);
+        //Add code here
       }}
       title = "Press Me!" />
       <Text style={styles.title}>Login</Text>
@@ -34,10 +55,10 @@ const FeedScreen = () => {
     <View style={styles.layout}>
     
       <Text style={styles.title}>Feed</Text>
-      {/** TODO: CHALLENGE 4: Create a button below that logs a use out */}
+      {/** TODO: CHALLENGE 4: Create a button below that logs a user out */}
       <Button 
       onPress = {() => {
-      setUser(false);
+          // Add code here
     }}
       title = "Press Me!"
     />
@@ -53,8 +74,7 @@ export const AppNavigator = () => {
   return (
     <Stack.Navigator>
       {/** TODO: CHALLENGE 5: Create an if-else loop that navigated users to the FeedScreen if they are logged in and to the Login Screen if they are logged out. */}
-      { hasUser? <Stack.Screen name="Feed" component={FeedScreen} /> 
-        : <Stack.Screen name="Login" component={LoginScreen} />
+      { //Add code here!
       } 
     </Stack.Navigator>
   );
