@@ -30,35 +30,36 @@ export default function Explore({navigation}) {
   const [imageUrls, setImageUrls] = useState([]);
 
   function displayImages(){
-    // Create a reference under which you want to list
-    const listRef = ref(storage);
-    // Find all the prefixes and items.
-    listAll(listRef)
-    .then((res) => {
-      res.items.map((itemRef) => {
-        // All the items under listRef.
-        //console.log("getStorage passed!");
-        getDownloadURL(ref(storage, itemRef.fullPath))
-          .then((url) => {
-            //console.log(url);
-            setImageUrls([url]);
-            console.log(imageUrls);
-          });
-      });
-    }).catch((error) => {
-      // Uh-oh, an error occurred!
-      console.log(error);
-    });
+    
+    
   }
 
   React.useEffect(() => {
+      // Create a reference under which you want to list
+      const listRef = ref(storage);
       const auth = getAuth();
-      displayImages();
+      //displayImages();
       onAuthStateChanged(auth, (user) => {
       if (user) {
         const uid = user.uid;
-        //displayImages();
-        //console.log('SignIn');
+        // Find all the prefixes and items.
+        listAll(listRef)
+        .then((res) => {
+            res.items.map((itemRef) => {
+              // All the items under listRef.
+              //console.log("getStorage passed!");
+              getDownloadURL(ref(storage, itemRef.fullPath))
+                .then((url) => {
+                  //console.log(url);
+                  setImageUrls(current => [...current, url]);
+                  //console.log(url);
+                });
+            });
+          }).catch((error) => {
+            // Uh-oh, an error occurred!
+            console.log(error);
+          });
+        
         // ...
       } else {
         // User is signed out
@@ -86,8 +87,12 @@ export default function Explore({navigation}) {
           </Text>
         </View>
       </View>
-        <View style={{flexDirection:"column"}}>   
-          
+        <View style={{flexDirection:"column"}}>  
+        {imageUrls && 
+          imageUrls.map((image, i) => (
+            <Image style={styles.images} source={{uri: image}} key={i}/>
+          )
+        )}
         </View>
         <StatusBar style="auto" />
       </View>

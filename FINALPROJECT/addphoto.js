@@ -24,7 +24,8 @@ const [image, setImage] = useState();
 let id = 0;
 uploadImage = async(uri) => {
   const storage = getStorage();
-  const storageRef = ref(storage,"some_child_" + id++);
+  var filename = uri.substring(uri.lastIndexOf('/') + 1, uri.length);
+  const storageRef = ref(storage,filename);
   const response = await fetch(uri);
   const blob = await response.blob();
   console.log("success!!")
