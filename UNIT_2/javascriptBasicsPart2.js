@@ -48,7 +48,7 @@ else if (!boolean)
 else
 { 
     // An ELSE statement only executes if the other two statements fail. 
-    console.log("Undefined Value!");
+    console.log("Do I execute?");
 
 }
 // TODO: CHALLENGE 1: What happens if you set 'boolean' variable to true? What if boolean is false? What if 
@@ -61,8 +61,8 @@ else
 // TODO: CHALLENGE 2: Create a boolean variable named 'weather'. Set weather to "rainy." Then create 
 // conditionals that print out what activities you enjoy doing in different weather. We have a template for you 
 // below. 
-                //<-- Make your variable here!
-                //<-- Set it to "rainy"
+let weather;
+                //<-- Set the variable 'weather' to "rainy"
 
 if(null){ // <-- replace 'null' with a statement that represents what happens if it is raining? 
     console.log("I will ...");
@@ -117,7 +117,7 @@ if((300 + 400) === 700){
  * OR:  ||
  * NOT: !
  */
-let weather = "sunny";
+weather = "sunny";
 let iansPizza = "open";
 
 if((weather === "sunny") && (iansPizza === "open")) // AND (&&) operator
@@ -128,9 +128,9 @@ if((weather == "sunny") || (iansPizza === "open")) // OR (||) operator
 {
     console.log("It might be sunny, OR Ian's might be open today, but I don't know for sure.");
 }
-if(!(weather == sunny)&&(iansPizza === "open")) // NOT(!); AND (&&) operator
+if(!(weather == sunny)&&!(iansPizza === "open")) // NOT(!); AND (&&) operator
 {
-    console.log("It is not sunny, and Ian's is definitely open! Let's order some pizza for delivery.");
+    console.log("It is not sunny, and Ian's is not open! Let's order some tacos!");
 }
 
 // TODO: CHALLENGE 4: write a statement of your own below using any two logical operators and the  
@@ -139,7 +139,7 @@ var zoo = "closed";
 var cleaning = "scheduled";
 var pandaExhibit = "open"
 
-if(null){ //<-- replace 'null' with a statement that represents what is printed to the console. s
+if(null){ //<-- replace 'null' with a statement that represents what is printed to the console.
     console.log("The zoo is open, but there will be a scheduled cleaning today, so the panda exhibit might or might not be open.");
 }
 
