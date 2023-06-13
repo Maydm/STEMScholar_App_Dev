@@ -18,9 +18,9 @@
 
 // It can be used to describe one line of code. 
 
-// TODO: CHALLENGE 1: Write your name in the line below
+// TODO: CHALLENGE 1: Write your name on the line below
 
-// <--
+// _______________________________________
 
 /** This is a Multi-Line Comment. 
  * It occupies multiple lines of code. 
@@ -50,7 +50,7 @@ let yearOfBirth = null;
 // TODO: CHALLENGE 2: Change the variable yearOfBirth to replace 'null' with the year that you were born. 
 
 // TODO: CHALLENGE 3: What number will be stored in currentAge? 
-// ANSWER: (write your answer here!) --> _____________________
+// ANSWER: (write your answer on the line!) --> _____________________
 //
 let currentAge = currentYear - yearOfBirth;
 
@@ -75,15 +75,15 @@ console.log(`EXAMPLE: And it is currently ${currentYear}`); // Template Literals
 
 // TODO: CHALLENGE 4: Print out your current age so it appears in the following example form: "I am 16 years old"
 // Once, using String Concatenation and once using a Template Literal. 
-console.log(); // Edit this line. 
+console.log(); // Edit the parentheses
 
 // This is a boolean variable. It can either be set to true or false.
 
 let boolean = false; 
 
 // TODO: CHALLENGE 4: Create a boolean below called 'completed' and set it to true. What happens next? 
-// let completed = true;
-// Create your variable above!^^
+
+              // <-- Create your variable in this space!
 
 if(completed){
     console.log("Congratulations! You finished your first activity. Call your instructor over to check out the work you did!");
