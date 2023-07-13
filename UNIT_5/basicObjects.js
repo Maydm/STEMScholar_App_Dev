@@ -37,7 +37,7 @@ function newJeweleryItem(id, jewelMaterial, jewelGem, jewelAge, jewelType){
             material: jewelMaterial,//<-- Property 1
             gem: jewelGem,          // <-- Property 2
             age: jewelAge,          // <-- Property 3
-                          // TODO: CHALLENGE 1: Add a 4th property here that records the 'type' of jewelery and
+            },            // TODO: CHALLENGE 1: Add a 4th property here that records the 'type' of jewelery and
                           // sets it to the jewelType value above. 
 
             // But once we've made our items, how do we get them or change them? 
@@ -48,7 +48,7 @@ function newJeweleryItem(id, jewelMaterial, jewelGem, jewelAge, jewelType){
             },
             set jewelID(newJewelID){
                 this.jewelID = newJewelID;
-            } 
+            
             //TODO: CHALLENGE 2: Make getters and setters for the rest of the properties, including material,
             // gem and age!
         }
@@ -122,13 +122,21 @@ addJeweleryItems();
 // Now we can use the Getters and Setters to get and set new values. 
 
 console.log(jeweleryDatabase[0].jewelID); // This gets the jewelID and prints the value 15264
-jeweleryDatabase[0].jewelID = 1002; // This sets the jewelID to 1002. 
+ console.log(jeweleryDatabase[0].information.age); // This gets the jewelage and prints the value 10
+ jeweleryDatabase[0].setjewelAge = 1002; // This sets the jewelAge to 1002. 
+ console.log(jeweleryDatabase[0].information.age); // This gets the jewelage and prints the value 1002
 
 // TODO: CHALLENGE 5: Iterate through all the values in the jeweleryDatabase and SET each jewelID by multiplying
 // the value by 2. (HINT: try using a forEach() iterator?)
 
+
+
+
+
+/** ^^^ TYPE ANSWER ABOVE ^^^  */
+
 // What about deleting the objects? To do so, we simply use the 'delete' operator and access the item. 
-delete jeweleryDatabase[0].information.jewelAge;
+delete jeweleryDatabase[0].information.age;
 
 // TODO: CHALLENGE 6: Using a loop, access every item and delete its jewelAge. 
 
